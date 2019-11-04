@@ -1,2 +1,2 @@
 # SpringBootDemo
-Spring Boot Demo project without database
+Spring Boot Demo Project Configured for Google App Engine 
