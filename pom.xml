@@ -68,7 +68,7 @@
                 <version>2.1.0</version>
                 <configuration>
                     <deploy.projectId>test-255811</deploy.projectId>
-                    <deploy.version>beta-1</deploy.version>
+                    <deploy.version>beta-2</deploy.version>
                 </configuration>
             </plugin>
         </plugins>

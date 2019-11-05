@@ -6,6 +6,9 @@
 package com.adfolks.demo.controller;
 
 import com.adfolks.demo.dto.UserDetails;
+import io.swagger.models.Response;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,11 +21,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/")
 public class UserController {
 
-    @PostMapping("/addUser")
-    public void addUser(UserDetails user) {
-        System.out.println(user.getFirstName());
-        System.out.println(user.getLastName());
-        System.out.println(user.getAge());
+    @PostMapping("/add-user")
+    @GetMapping("/add-user")
+    public ResponseEntity<UserDetails> addUser(UserDetails user) {
+        return ResponseEntity.ok(user);
     }
 
 }

@@ -1,11 +1,10 @@
+service: test-app
 runtime: java
 env: flex
 runtime_config:
   jdk: openjdk8
-env_variables:
-  SPRING_PROFILES_ACTIVE: "gcp"
 handlers:
-  - url: /.*
+  - url: /test-app/.*
     script: this field is required, but ignored
 manual_scaling:
   instances: 1
